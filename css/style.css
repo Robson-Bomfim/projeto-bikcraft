@@ -50,6 +50,25 @@ p {
   background-color: #000000;
 }
 
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px 0;
+  background-color: #000000;
+}
+
 img {
   display: block;
 }
@@ -83,9 +102,23 @@ img {
   line-height: 20px;
   padding: 10px 0;
 }
+
 .header_menu ul li a:hover {
   color: #ffffff;
 }
+
+.header_menu ul li a.menu_ativo {
+  color: #ffffff;
+}
+
+/*.header_menu ul li a.menu_ativo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 3px 0;
+  background-color: #000000;
+}*/
 
 /* Introdução */
 .introducao {
@@ -131,6 +164,32 @@ img {
   font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* Introdução interna */
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  color: #ffffff;
+  background-size: cover;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.introducao-interna h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introducao-interna h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 6px auto 10px auto;
+  background-color: #ffffff;
 }
 
 /*Produtos*/
@@ -232,6 +291,7 @@ img {
 
 .qualidade_lista {
   padding-top: 20px;
+  overflow: auto; /* clear-fix */
 }
 
 .qualidade_lista li h3 {
