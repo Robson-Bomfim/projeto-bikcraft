@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsivo.css">
+	<script src="js/libs/modernizr.custom.45655.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
 	</section>
 
 	<!--Sessão de produtos-->
-	<section class="produtos container">
+	<section class="produtos container animar">
 		<h2 class="subtitulo">Produtos</h2>
 		<ul class="produtos_lista">
 
@@ -81,11 +82,11 @@
 	<section class="portfolio">
 		<div class="container">
 			<h2 class="subtitulo">portfólio</h2>
-			<ul class="portfolio_list">
-				<li class="grid-8"><img src="portfolio/retro.jpg" alt="Bicicleta retro"></li>
-				<li class="grid-8"><img src="portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
-				<li class="grid-16"><img src="portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
-			</ul>
+			<div class="portfolio_list">
+				<div class="grid-8"><img src="portfolio/retro.jpg" alt="Bicicleta retro"></div>
+				<div class="grid-8"><img src="portfolio/passeio.jpg" alt="Bicicleta passeio"></div>
+				<div class="grid-16"><img src="portfolio/esporte.jpg" alt="Bicicleta esporte"></div>
+			</div>
 			<div class="call">
 				<p>conheça mais o nosso portfólio.</p>
 				<a href="portfolio.html" class="btn">Portfólio</a>
@@ -165,4 +166,8 @@
 	</footer>
 </body>
 
+<!--JavaScript-->
+<script src="js/libs/jquery-1.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </html>
